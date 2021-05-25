@@ -135,7 +135,7 @@ var simplifyUrl = function simplifyUrl(url) {
 var render = function render() {
   $('.siteList').find('li:not(.last)').remove();
   siteStorage.forEach(function (item, index) {
-    var site = $("<li>\n                      <div class=\"site\">\n                        <div class=\"logo\">".concat(item.logo, "</div>\n                        <div class=\"link\">").concat(simplifyUrl(item.url), "</div>\n                        <div class=\"remove\">\n                          <svg class=\"icon\" aria-hidden=\"true\">\n                            <use xlink:href=\"#icon-add\"></use>\n                          </svg>\n                        </div>\n                      </div>\n                    </li>")).insertBefore(lastLi); // 模拟 a 标签
+    var site = $("<li>\n                      <div class=\"site\">\n                        <div class=\"logo\">".concat(item.logo, "</div>\n                        <div class=\"link\">").concat(simplifyUrl(item.url), "</div>\n                        <div class=\"remove\">\n                          <svg class=\"icon\" aria-hidden=\"true\">\n                            <use xlink:href=\"#icon-remove\"></use>\n                          </svg>\n                        </div>\n                      </div>\n                    </li>")).insertBefore(lastLi); // 模拟 a 标签
 
     site.on('click', function () {
       window.location.href = item.url;
@@ -185,4 +185,4 @@ $('.searchForm>input').on('keypress', function (e) {
   e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.48e43180.js.map
+//# sourceMappingURL=main.566d50fd.js.map
