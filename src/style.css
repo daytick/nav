@@ -53,6 +53,7 @@ body{
   background: #4E6EF2;
   color: white;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .globalMain{
