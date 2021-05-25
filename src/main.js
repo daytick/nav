@@ -19,7 +19,7 @@ const render = () => {
                         <div class="link">${simplifyUrl(item.url)}</div>
                         <div class="remove">
                           <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-add"></use>
+                            <use xlink:href="#icon-remove"></use>
                           </svg>
                         </div>
                       </div>
